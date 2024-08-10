@@ -114,7 +114,11 @@ h1{
     font-size: 1.8rem;
     font-weight: 600;
 }
-
 .thank{
     display: none;
+}
+@media screen and (max-width:400px) {
+    body{
+        padding-inline: 1rem;
+    }
 }
