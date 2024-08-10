@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'main';
+    src: url(./font/Overpass-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 700;
+}
+:root{
+    --orange:hsl(25, 97%, 53%);
+    --white:hsl(0, 0%, 100%);
+    --light-grey:hsl(217, 12%, 63%);
+    --dark-blue:hsl(213, 19%, 18%);
+    --very-dark-blue:hsl(216, 12%, 8%);
+    --paragraph-fz:15px;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+/*=================================================*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14151a;
+    font-family: 'main';
+}
+main{
+    width:415px;
+    height: 420px;
+    background-color: #1d242e;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.logo,.button{
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+h1{
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.text p,.thank p{
+    color: var(--light-grey);
+    line-height: 1.5;
+    font-size: var(--paragraph-fz);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+.submit{
+    height: 3rem;
+    color: var(--dark-blue);
+    font-weight: 700;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+.button:hover,.selected{
+    color: var(--dark-blue);
+    background-color: var(--orange);
+    font-weight: 600;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+}
+.thank{
+    width:415px;
+    height: 420px;
+    background-color: #1d242e;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.thank img{
+    height: 105px;
+    width: 168px;
+}
+.select{
+    background: var(--dark-blue);
+    color: var(--orange);
+    padding: 7px;
+    border-radius: 1rem;
+}
+.thank h2{
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.thank{
+    display: none;
+}
